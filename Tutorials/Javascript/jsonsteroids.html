@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: #f0f0f0;
+        }
+        #sendItem{
+            background-color: burlywood;
+            width: 200px;
+            margin: 30px;
+            padding:30px;
+
+            transition: 3s all;
+            left: 0;
+        }
+        .leftTrans{
+            left: 3000px !important;
+            position: absolute;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function CheckValidation(){
+            var password = document.getElementById("password").value;
+            if(password !="1234"){
+                alert("Caution! Password is Incorrect!");
+            }
+            else{
+                var y = document.getElementById("sendItem");
+                y.className += "leftTrans";
+            }
+        }
+
+    </script>
+    <title>Steroids</title>
+</head>
+<body>
+    <div id="sendItem">
+        <form action="">
+            Password: <br/>
+            <input type="password" id="password" placeholder="Password"/>
+            <br><br>
+            <input type="button" value="send!" id="submit" onclick="CheckValidation()">
+        </form>
+    </div>
+
+</body>
+</html>

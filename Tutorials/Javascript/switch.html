@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    function VendingPendingMachine(pendingTime){
+        switch(pendingTime){
+            case 1:
+                //...case for #1
+                PendingMessage(pendingTime)
+            break;
+            case 2:
+                //...case for #2
+                PendingMessage(pendingTime)
+            break;            
+            case 3:
+                //...case for #1
+                PendingMessage(pendingTime)
+            break;
+            case 4:
+                //...case for #1
+                PendingMessage(pendingTime)
+            break;
+            default:
+                //...case for the rest of the buttons
+                PendingMessage(pendingTime)
+            break;
+        }
+    }
+    function PendingMessage(time){
+        alert("The Vending Pending Machine says you have to wait " + time+ " minutes!");
+    }
+    </script>
+    <title>Switch Statemtns</title>
+</head>
+<body>
+    <h1>The Vending Pending Machine!</h1>
+    <input type="button" value="1" onclick="VendingPendingMachine(1)"/>
+    <input type="button" value="2" onclick="VendingPendingMachine(2)"/>    
+    <input type="button" value="3" onclick="VendingPendingMachine(3)"/>    
+    <input type="button" value="4" onclick="VendingPendingMachine(7)"/>    
+
+</body>
+</html>
